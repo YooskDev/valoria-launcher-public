@@ -1,0 +1,57 @@
+name: CI
+
+on:
+    push:
+        branches: ["main"]
+
+    pull_request:
+        branches: ["main"]
+
+jobs:
+    build-js:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [24]
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v6
+
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  version: 10
+
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v6
+              with:
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Install dependencies
+              run: pnpm install --no-frozen-lockfile
+
+            - name: Build project
+              run: pnpm build
+
+    check-rust:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Install required packages
+              run: |
+                  sudo apt update
+                  sudo apt install -y libgtk-3-dev libsoup-3.0-dev libjavascriptcoregtk-4.1-dev libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+
+            - name: Checkout repository
+              uses: actions/checkout@v6
+
+            - name: Install Rust toolchain
+              uses: dtolnay/rust-toolchain@stable
+              with:
+                  toolchain: nightly
+                  components: clippy
+
+            - name: Run Clippy
+              run: cargo clippy --release --manifest-path ./src-tauri/Cargo.toml

@@ -1,0 +1,26 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="256" height="256" rx="60" fill="#0a0e1a"/>
+  <!-- Inner Border with Gradient -->
+  <rect x="2" y="2" width="252" height="252" rx="58" stroke="url(#paint0_linear)" stroke-width="4" stroke-opacity="0.6"/>
+  <!-- Stylized Y Logo with Cyan Glow -->
+  <g filter="url(#glow)">
+    <path d="M70 70 L115 130 L115 190 A 10 10 0 0 0 125 200 L 131 200 A 10 10 0 0 0 141 190 L141 130 L186 70 A 10 10 0 0 0 177 55 L 157 55 A 10 10 0 0 0 149 60 L 128 92 L 107 60 A 10 10 0 0 0 99 55 L 79 55 A 10 10 0 0 0 70 70 Z" fill="#00d4ff"/>
+    <path d="M92 70 L128 118 L164 70" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  </g>
+  <defs>
+    <!-- Cyan to Blue Gradient -->
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#0066ff"/>
+    </linearGradient>
+    <!-- Glow Filter -->
+    <filter id="glow" x="40" y="30" width="176" height="190" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+</svg>

@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "./generated/globals.css";
+@import "./generated/animations/custom-scrollbar.css";
+@import "./generated/animations/fade-in-animation.css";
+@import "./generated/animations/modpack-card-animation.css";
+@import "./generated/animations/play-button-animation.css";
+@import "./generated/animations/skin-card-animation.css";

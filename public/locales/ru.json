@@ -1,0 +1,299 @@
+{
+    "layout.navBar": {
+        "tabs.index": "Сборки",
+        "tabs.skins": "Скины",
+        "tabs.mods": "Моды",
+        "tabs.customContent": "Ресурсы",
+        "tabs.profile": "Профиль",
+        "tabs.settings": "Настройки"
+    },
+
+    "pages": {
+        "signIn": {
+            "headings.first": "Вход в аккаунт",
+            "headings.second": "Войдите, чтобы начать играть",
+
+            "fields.username.name": "Логин",
+            "fields.username.placeholder": "Введите логин",
+
+            "fields.password.name": "Пароль",
+            "fields.password.placeholder": "Введите пароль",
+
+            "fields.rememberMe.name": "Запомнить меня",
+
+            "buttons.submit": "Войти",
+
+            "errors.usernameMissing": "Введите логин",
+            "errors.passwordMissing": "Введите пароль",
+            "errors.passwordShort": "Пароль должен содержать минимум {{minLength}} символов",
+            "errors.usernameInvalid": "Неверное имя пользователя",
+            "errors.passwordInvalid": "Неверный пароль",
+            "errors.invalidCredentials": "Неверный логин или пароль",
+            "errors.serverError": "Ошибка сервера",
+
+            "status.loading": "Проверка..."
+        },
+
+        "signInTotp": {
+            "headings.first": "Двухфакторная аутентификация",
+            "headings.second": "Введите 6-значный код из приложения-аутентификатора",
+            "fields.code.name": "Код подтверждения",
+            "buttons.submit": "Подтвердить",
+            "buttons.back": "Назад",
+            "errors.totpMissing": "Введите код",
+            "errors.totpInvalid": "Неверный код",
+            "errors.serverError": "Ошибка сервера",
+            "status.loading": "Проверка..."
+        },
+
+        "modpacks": {
+            "headings.first": "Сборки",
+
+            "buttons.play": "ИГРАТЬ",
+            "buttons.select": "Выбор сборки",
+            "buttons.unavailable": "Недоступно",
+
+            "status.launching": "Запуск...",
+
+            "alerts.forcedTotp.name": "Требуется 2FA",
+            "alerts.forcedTotp.message": "У вас есть роль, которая требует двухфакторную аутентификацию для игры. Перейдите во вкладку \"Профиль\", чтобы её настроить.",
+
+            "alerts.banned.name": "Аккаунт Заблокирован",
+            "alerts.banned.message": "Ваш аккаунт сейчас заблокирован. Вы не можете устанавливать или играть на модпаках.",
+            "alerts.banned.until": "Ваша блокировка истекает {{date}}",
+            "alerts.banned.permanent": "Ваша блокировка не истекает."
+        },
+
+        "mods": {
+            "headings.first": "Управление модами",
+            "headings.second": "Активно: {{number}} из {{max}} модов",
+
+            "categories.all": "Все",
+            "categories.optimization": "Оптимизация",
+            "categories.gameplay": "Геймплей",
+            "categories.visual": "Визуальные",
+            "categories.utility": "Утилиты",
+            "categories.debug": "Отладка",
+
+            "fields.search.placeholder": "Поиск модов...",
+            "fields.version.name": "Версия:",
+            "fields.author.name": "Автор:",
+
+            "alerts.notInstalled.name": "Модпак не установлен",
+            "alerts.notInstalled.message": "Для управления модами необходимо сначала установить модпак. Перейдите во вкладку \"Сборки\" и выберите нужный модпак для установки.",
+            "alerts.notInstalled.note": "Примечание: Все моды устанавливаются вместе с выбранным модпаком. После установки вы сможете включать и отключать отдельные моды.",
+
+            "alerts.noneFound.name": "Моды не найдены",
+            "alerts.noneFound.message": "Попробуйте изменить критерии поиска"
+        },
+
+        "profile": {
+            "headings.first": "Профиль",
+
+            "alerts.disableTotp": "Вы уверены, что хотите отключить двухфакторную аутентификацию?",
+            "alerts.passwordChanged": "Пароль успешно изменен!",
+            "alerts.logout": "Вы уверены, что хотите выйти из аккаунта?",
+            "alerts.logoutSuccess": "Выход из аккаунта выполнен!",
+
+            "alerts.emailAccess.name": "Доступ к E-Mail",
+            "alerts.emailAccess.message": "Включите двухфакторную аутентификацию для доступа к настройкам E-Mail",
+            "alerts.emailAccess.setupTotp": "Настроить 2FA",
+            "alerts.devMode.name": "DEV-MODE",
+            "alerts.devMode.message": "Специальный режим для главного разработчика. Открывает доступ к DEV-модпаку и экспериментальным функциям.",
+            "alerts.devMode.activated": "✓ Активирован",
+            "alerts.devMode.activate": "Активировать",
+            "alerts.totp.name": "Двухфакторная аутентификация",
+            "alerts.totp.message": "Добавьте дополнительный уровень безопасности к вашему аккаунту.",
+            "alerts.totp.activated": "✓ Включена",
+            "alerts.totp.activate": "Включить",
+
+            "fields.email.name": "Email",
+            "fields.password.name": "Пароль",
+            "fields.newPassword.name": "Новый пароль",
+            "fields.newPassword.placeholder": "Минимум 6 символов",
+            "fields.confirmPassword.name": "Подтвердите пароль",
+            "fields.confirmPassword.placeholder": "Повторите пароль",
+
+            "errors.usernameMissing": "Никнейм не может быть пустым!",
+            "errors.usernameTaken": "Этот никнейм уже занят!",
+            "errors.serverError": "Ошибка сервера",
+            "errors.passwordMissing": "Пожалуйста, заполните оба поля пароля!",
+            "errors.passwordShort": "Пароль должен содержать не менее {{minLength}} символов!",
+            "errors.passwordMismatch": "Пароли не совпадают!",
+            "errors.emailMissing": "Введите E-Mail",
+            "errors.emailInvalid": "Пожалуйста, введите правильный E-Mail",
+
+            "buttons.save": "Сохранить",
+            "buttons.edit": "Изменить",
+            "buttons.cancel": "Отмена",
+            "buttons.logOut": "Выйти из аккаунта"
+        },
+
+        "settings.sections": {
+            "language.name": "Язык",
+            "language.description": "Выберите предпочитаемый язык интерфейса",
+
+            "memory.name": "Оперативная память",
+            "memory.description": "Выделите количество RAM для игры",
+
+            "memory.alerts.tooMuch": "Внимание! Выделено слишком много памяти. Рекомендуется оставить минимум 2 GB для системы.",
+            "memory.alerts.optimal": "Оптимальное значение для вашей системы",
+
+            "memory.fields.total.name": "Всего RAM",
+            "memory.fields.available.name": "Доступно",
+            "memory.fields.recommended.name": "Рекомендуется",
+            "memory.fields.allocated.name": "Выделено для игры:",
+
+            "cpus.name": "Ядра процессора",
+            "cpus.description": "Выделите количество ядер CPU для игры",
+
+            "cpus.alerts.tooMuch": "Рекомендуется оставить минимум 1-2 ядра для системы",
+            "cpus.alerts.optimal": "Оптимальное значение для большинства игр",
+
+            "cpus.fields.available.name": "Доступные ядер",
+            "cpus.fields.allocated.name": "Выделено для игры",
+            "cpus.fields.count.name": "Количество ядер:",
+            "cpus.fields.count.one": "1 ядро",
+            "cpus.fields.count.multiple": "{{number}} ядер",
+
+            "gameDir.name": "Расположение лаунчера",
+            "gameDir.description": "Укажите путь к папке с игрой",
+            "gameDir.buttons.browse": "Обзор"
+        },
+
+        "skins": {
+            "headings.first": "Управление скином",
+            "headings.second": "Загрузите свой скин или используйте стандартный",
+            "headings.currentSkin": "Текущий скин",
+
+            "alerts.confirmReset": "Вы уверены, что хотите сбросить скин на стандартный?",
+            "alerts.default": "Стандартный",
+            "alerts.custom": "Пользовательский",
+            "alerts.defaultSkin": "Используется стандартный скин игры. Вы можете загрузить свой собственный скин в формате PNG.",
+            "alerts.customSkin": "Используется ваш пользовательский скин. Вы можете загрузить новый или вернуться к стандартному.",
+            "alerts.requirements.name": "Требования к файлу:",
+            "alerts.requirements.format": "Формат: {{value}}",
+            "alerts.requirements.imageSize": "Требуемый размер: {{value}} пикселей",
+            "alerts.requirements.maxFileSize": "Максимальный размер файла: {{value}} МБ",
+            "alerts.howTo.name": "Как создать скин?",
+            "alerts.howTo.message": "Вы можете создать свой скин с помощью специальных редакторов скинов или скачать готовые скины с популярных сайтов. После создания просто загрузите файл через кнопку выше.",
+
+            "fields.model.name": "Модель скина",
+            "fields.model.description": "Выберите тип рук персонажа",
+            "fields.model.values.default": "Обычные руки (4px)",
+            "fields.model.values.slim": "Тонкие руки (3px)",
+
+            "buttons.upload": "Загрузить новый скин",
+            "buttons.reset": "Сбросить на стандартный",
+
+            "errors.notImage": "Пожалуйста, загрузите изображение!",
+            "errors.changeFailed": "Не удалось сменить скин. Убедитесь, что размер изображения - 64x64.",
+            "errors.resetFailed": "Не удалось сбросить скин на стандартный."
+        },
+
+        "update": {
+            "status.checking": "Проверка обновлений...",
+            "status.downloading": "Загрузка обновления..."
+        }
+    },
+
+    "modals": {
+        "twoFactor": {
+            "headings.first": "Настройка 2FA",
+            "headings.second": "Двухфакторная аутентификация",
+            "steps.email.headings.first": "Введите ваш E-Mail адрес",
+            "steps.qrCode.headings.first": "Отсканируйте QR-код в приложении-аутентификаторе (Google Authenticator, Authy и т.п.)",
+            "steps.emailVerify.headings.first": "Код подтверждения отправлен на",
+            "steps.totpVerify.headings.first": "Последний шаг!",
+            "steps.totpVerify.headings.second": "Введите 6-значный код из приложения для подтверждения",
+
+            "steps.qrCode.alerts.secretCopied": "Секретный ключ скопирован в буфер обмена!",
+            "steps.emailVerify.alerts.emailCodeSent": "Код подтверждения отправлен на {{email}}",
+
+            "steps.email.fields.email.name": "E-Mail",
+            "steps.qrCode.fields.secretKey.name": "Или введите ключ вручную:",
+            "steps.emailVerify.fields.code.name": "Введите код из E-Mail",
+            "steps.totpVerify.fields.code.name": "Код из приложения",
+
+            "steps.email.errors.emailMissing": "Введите E-Mail",
+            "steps.email.errors.emailInvalid": "Пожалуйста, введите правильный E-Mail",
+            "steps.emailVerify.errors.emailCodeMissing": "Введите код",
+            "steps.emailVerify.errors.emailCodeInvalid": "Неверный код",
+            "steps.emailVerify.errors.emailInvalid": "Неверный E-Mail (или ошибка сервера)",
+            "steps.totpVerify.errors.totpCodeMissing": "Введите код",
+            "steps.totpVerify.errors.totpCodeInvalid": "Неверный код",
+            "steps.totpVerify.errors.serverError": "Ошибка сервера",
+
+            "steps.email.status.loading": "Проверка...",
+            "steps.qrCode.status.loading": "Отправка...",
+            "steps.emailVerify.status.loading": "Проверка...",
+            "steps.totpVerify.status.loading": "Проверка...",
+
+            "steps.email.name": "E-Mail",
+            "steps.qrCode.name": "QR-код",
+            "steps.verification.name": "Подтверждение",
+
+            "steps.email.buttons.next": "Далее: QR-код",
+            "steps.qrCode.buttons.next": "Далее: Проверка E-Mail",
+            "steps.emailVerify.buttons.next": "Подтвердить E-Mail",
+            "steps.totpVerify.buttons.next": "Включить 2FA",
+            "steps.emailVerify.buttons.back": "Назад",
+            "steps.totpVerify.buttons.back": "Назад"
+        },
+
+        "loading": {
+            "status.downloadBundle": "Загрузка пакета сборки...",
+            "status.downloadGame": "Загрузка файлов игры...",
+            "status.extractBundle": "Распаковка пакета сборки...",
+
+            "headings.logs": "Логи запуска:",
+            "headings.progress": "Прогресс загрузки"
+        },
+
+        "selectModpack": {
+            "headings.first": "Выбор сборки",
+            "buttons.close": "Закрыть"
+        },
+
+        "modpack": {
+            "alerts.maintenance.name": "Технические работы",
+            "alerts.maintenance.eta": "Ожидаемое время завершения: {{date}}",
+
+            "fields.playerCount.name": "Онлайн",
+            "fields.playerCount.value": "{{number}} игроков",
+            "fields.modCount.name": "Модов",
+            "fields.modCount.value": "{{number}}",
+
+            "buttons.play": "ИГРАТЬ"
+        },
+
+        "error": {
+            "headings.first": "Ошибка приложения",
+            "headings.second": "Одна или более неожиданных ошибок произошли во время работы приложения. Пожалуйста, сообщите это разработчикам.",
+
+            "buttons.ok": "Понятно"
+        },
+
+        "emailVerify": {
+            "headings.first": "Подтверждение E-Mail",
+            "headings.second": "Код подтверждения отправлен на",
+
+            "notes.first": "Проверьте папку \"Спам\", если не видите письмо",
+            "notes.second": "Код действителен в течение {{minutes}} минут. После подтверждения ваш email будет изменен.",
+
+            "fields.code.name": "Введите 6-значный код",
+
+            "alerts.codeResent": "Код отправлен на почту!",
+
+            "errors.codeInvalid": "Неверный код",
+            "errors.serverError": "Ошибка сервера",
+
+            "status.loading": "Проверка...",
+
+            "buttons.confirm": "Подтвердить",
+            "buttons.resend": "Отправить код повторно"
+        }
+    },
+
+    "modpacks": { "emptyDescription": "Описание отсутствует." }
+}

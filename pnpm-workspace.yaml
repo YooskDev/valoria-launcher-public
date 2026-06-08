@@ -1,0 +1,7 @@
+allowBuilds:
+  '@scarf/scarf': set this to true or false
+  esbuild: set this to true or false
+  yarn: set this to true or false
+
+overrides:
+  tmp: "^0.2.6"

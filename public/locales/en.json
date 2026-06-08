@@ -1,0 +1,300 @@
+{
+    "layout.navBar": {
+        "tabs.index": "Modpacks",
+        "tabs.skins": "Skins",
+        "tabs.mods": "Mods",
+        "tabs.customContent": "Resources",
+        "tabs.profile": "Profile",
+        "tabs.settings": "Settings"
+    },
+
+    "pages": {
+        "signIn": {
+            "headings.first": "Account Login",
+            "headings.second": "Sign in to start playing",
+
+            "fields.username.name": "Username",
+            "fields.username.placeholder": "Enter username",
+
+            "fields.password.name": "Password",
+            "fields.password.placeholder": "Enter password",
+
+            "fields.rememberMe.name": "Remember me",
+
+            "buttons.submit": "Sign In",
+
+            "errors.usernameMissing": "Enter username",
+            "errors.passwordMissing": "Enter password",
+            "errors.passwordShort": "The password must be at least {{minLength}} characters long",
+            "errors.usernameInvalid": "Invalid username",
+            "errors.passwordInvalid": "Invalid password",
+            "errors.invalidCredentials": "Invalid username or password",
+            "errors.serverError": "Server error",
+
+            "status.loading": "Checking..."
+        },
+
+        "signInTotp": {
+            "headings.first": "Two Factor Authentication",
+            "headings.second": "Enter the 6-digit code from the authenticator app",
+            "fields.code.name": "Confirmation code",
+            "buttons.submit": "Confirm",
+            "buttons.back": "Back",
+            "errors.totpMissing": "Enter code",
+            "errors.totpInvalid": "Invalid code",
+            "errors.serverError": "Server error",
+            "status.loading": "Checking..."
+        },
+
+        "modpacks": {
+            "headings.first": "Modpacks",
+
+            "buttons.play": "PLAY",
+            "buttons.select": "Select Modpack",
+            "buttons.unavailable": "Unavailable",
+
+            "status.launching": "Launching...",
+
+            "alerts.forcedTotp.name": "2FA is Required",
+            "alerts.forcedTotp.message": "You have a role that requires 2FA in order to play. Go to the \"Profile\" tab to set it up.",
+
+            "alerts.banned.name": "Account Blocked",
+            "alerts.banned.message": "Your account is currently blocked. You are not allowed to install or play any modpacks.",
+            "alerts.banned.until": "Your ban will expire at {{date}}",
+            "alerts.banned.permanent": "Your ban will not expire."
+        },
+
+        "mods": {
+            "headings.first": "Mod management",
+            "headings.second": "Active: {{number}} out of {{max}} mods.",
+
+            "categories.all": "All",
+            "categories.optimization": "Optimization",
+            "categories.gameplay": "Gameplay",
+            "categories.visual": "Visual",
+            "categories.utility": "Utility",
+            "categories.debug": "Debug",
+
+            "fields.search.placeholder": "Mods search...",
+            "fields.version.name": "Version:",
+            "fields.author.name": "Author:",
+
+            "alerts.notInstalled.name": "The modpack is not installed",
+            "alerts.notInstalled.message": "To change the mods the modpacks needs to be installed first. Go to the \"Modpacks\" tab and choose the desired modpack.",
+            "alerts.notInstalled.note": "Note: All mods are installed together with the chosen modpack. After installation, you will be able to turn on and off specific mods.",
+
+            "alerts.noneFound.name": "Mods not found",
+            "alerts.noneFound.message": "Try changing the search criteria"
+        },
+
+        "profile": {
+            "headings.first": "Profile",
+
+            "alerts.disableTotp": "Are you sure that you want to disable two factor authentication?",
+            "alerts.passwordChanged": "Password changed successfully!",
+            "alerts.logout": "Are you sure that you want to log out of the account?",
+            "alerts.logoutSuccess": "Account log out performed!",
+
+            "alerts.emailAccess.name": "Access to E-Mail",
+            "alerts.emailAccess.message": "Enable two factor authentication to access E-Mail settings",
+            "alerts.emailAccess.setupTotp": "Set up 2FA",
+            "alerts.devMode.name": "DEV-MODE",
+            "alerts.devMode.message": "Special mode for the main developer. Opens access to the DEV-modpack and experimental functions.",
+            "alerts.devMode.activated": "✓ Activated",
+            "alerts.devMode.activate": "Activate",
+            "alerts.totp.name": "Two factor authentication",
+            "alerts.totp.message": "Add an additional layer of security to your account.",
+            "alerts.totp.activated": "✓ Enabled",
+            "alerts.totp.activate": "Enable",
+            "alerts.emailChanged": "Email successfully changed!",
+
+            "fields.email.name": "E-Mail",
+            "fields.password.name": "Password",
+            "fields.newPassword.name": "New Password",
+            "fields.newPassword.placeholder": "A minimum of 6 characters",
+            "fields.confirmPassword.name": "Confirm Password",
+            "fields.confirmPassword.placeholder": "Type the password again",
+
+            "errors.usernameMissing": "Username may not be empty!",
+            "errors.usernameTaken": "That username is already taken!",
+            "errors.serverError": "Server error",
+            "errors.passwordMissing": "Please fill out both password fields!",
+            "errors.passwordShort": "The password must be at least {{minLength}} characters long!",
+            "errors.passwordMismatch": "The passwords don't match!",
+            "errors.emailMissing": "Enter the E-Mail",
+            "errors.emailInvalid": "Please enter a valid E-Mail address",
+
+            "buttons.save": "Save",
+            "buttons.edit": "Edit",
+            "buttons.cancel": "Cancel",
+            "buttons.logOut": "Log out of the account"
+        },
+
+        "settings.sections": {
+            "language.name": "Language",
+            "language.description": "Choose the preferred interface language",
+
+            "memory.name": "RAM",
+            "memory.description": "Allocate the amount of RAM for your game",
+
+            "memory.alerts.tooMuch": "Warning! Too much memory is allocated. It is recommended to leave at least 2 GB for the system.",
+            "memory.alerts.optimal": "Optimal value for your system",
+
+            "memory.fields.total.name": "Total RAM",
+            "memory.fields.available.name": "Available",
+            "memory.fields.recommended.name": "Recommended",
+            "memory.fields.allocated.name": "Allocated for the game:",
+
+            "cpus.name": "CPU cores",
+            "cpus.description": "Allocate the amount of CPU cores for the game",
+
+            "cpus.alerts.tooMuch": "It is recommended to leave at least 1-2 cores for the system",
+            "cpus.alerts.optimal": "Optimal value for most games",
+
+            "cpus.fields.available.name": "Available cores",
+            "cpus.fields.allocated.name": "Allocated for the game",
+            "cpus.fields.count.name": "Core number:",
+            "cpus.fields.count.one": "1 core",
+            "cpus.fields.count.multiple": "{{number}} cores",
+
+            "gameDir.name": "Launcher location",
+            "gameDir.description": "Specify the path to the game directory",
+            "gameDir.buttons.browse": "Browse"
+        },
+
+        "skins": {
+            "headings.first": "Skin Management",
+            "headings.second": "Upload your skin or use the default",
+            "headings.currentSkin": "Current Skin",
+
+            "alerts.confirmReset": "Are you sure you want to reset the skin to default?",
+            "alerts.default": "Default",
+            "alerts.custom": "Custom",
+            "alerts.defaultSkin": "The default game skin is in use. You can upload your own skin in PNG format.",
+            "alerts.customSkin": "Your custom skin is in use. You can upload a new one or revert to default.",
+            "alerts.requirements.name": "File requirements:",
+            "alerts.requirements.format": "Format: {{value}}",
+            "alerts.requirements.imageSize": "Required size: {{value}} pixels",
+            "alerts.requirements.maxFileSize": "Maximum file size: {{value}} MB",
+            "alerts.howTo.name": "How to create a skin?",
+            "alerts.howTo.message": "You can create your own skin using special skin editors or download ready-made skins from popular sites. After creating, simply upload the file using the button above.",
+
+            "fields.model.name": "Skin Model",
+            "fields.model.description": "Select the character's arm type",
+            "fields.model.values.default": "Normal arms (4px)",
+            "fields.model.values.slim": "Slim arms (3px)",
+
+            "buttons.upload": "Upload new skin",
+            "buttons.reset": "Reset to default",
+
+            "errors.notImage": "Please upload an image!",
+            "errors.changeFailed": "Failed to change the skin. Make sure the image size is 64x64.",
+            "errors.resetFailed": "Failed to reset the skin to default."
+        },
+
+        "update": {
+            "status.checking": "Checking for updates...",
+            "status.downloading": "Downloading update..."
+        }
+    },
+
+    "modals": {
+        "twoFactor": {
+            "headings.first": "2FA Setup",
+            "headings.second": "Two factor authentication",
+            "steps.email.headings.first": "Enter your E-Mail address",
+            "steps.qrCode.headings.first": "Scan the QR-code in an authenticator app (Google Authenticator, Authy, etc.)",
+            "steps.emailVerify.headings.first": "The verification code was sent to",
+            "steps.totpVerify.headings.first": "Last step!",
+            "steps.totpVerify.headings.second": "Enter the 6-digit code from the authenticator app for verification",
+
+            "steps.qrCode.alerts.secretCopied": "Secret key copied to clipboard!",
+            "steps.emailVerify.alerts.emailCodeSent": "The verification code was sent to {{email}}",
+
+            "steps.email.fields.email.name": "Email",
+            "steps.qrCode.fields.secretKey.name": "Or enter the key manually:",
+            "steps.emailVerify.fields.code.name": "Enter the code from the E-Mail",
+            "steps.totpVerify.fields.code.name": "Code from the app",
+
+            "steps.email.errors.emailMissing": "Enter E-Mail",
+            "steps.email.errors.emailInvalid": "Please enter a valid E-Mail",
+            "steps.emailVerify.errors.emailCodeMissing": "Enter code",
+            "steps.emailVerify.errors.emailCodeInvalid": "Invalid code",
+            "steps.emailVerify.errors.emailInvalid": "Invalid E-Mail (or server error)",
+            "steps.totpVerify.errors.totpCodeMissing": "Enter code",
+            "steps.totpVerify.errors.totpCodeInvalid": "Invalid code",
+            "steps.totpVerify.errors.serverError": "Server error",
+
+            "steps.email.status.loading": "Checking...",
+            "steps.qrCode.status.loading": "Sending...",
+            "steps.emailVerify.status.loading": "Sending...",
+            "steps.totpVerify.status.loading": "Checking...",
+
+            "steps.email.name": "Email",
+            "steps.qrCode.name": "QR Code",
+            "steps.verification.name": "Verification",
+
+            "steps.email.buttons.next": "Next: QR-Code",
+            "steps.qrCode.buttons.next": "Next: Email verification",
+            "steps.emailVerify.buttons.next": "Confirm E-Mail",
+            "steps.totpVerify.buttons.next": "Activate 2FA",
+            "steps.emailVerify.buttons.back": "Back",
+            "steps.totpVerify.buttons.back": "Back"
+        },
+
+        "loading": {
+            "status.downloadBundle": "Downloading the modpack bundle...",
+            "status.downloadGame": "Downloading game files...",
+            "status.extractBundle": "Extracting the modpack bundle...",
+
+            "headings.logs": "Startup logs:",
+            "headings.progress": "Loading progress"
+        },
+
+        "selectModpack": {
+            "headings.first": "Select Modpack",
+            "buttons.close": "Close"
+        },
+
+        "modpack": {
+            "alerts.maintenance.name": "Maintenance",
+            "alerts.maintenance.eta": "ETA: {{date}}",
+
+            "fields.playerCount.name": "Online",
+            "fields.playerCount.value": "{{number}} players",
+            "fields.modCount.name": "Mods",
+            "fields.modCount.value": "{{number}}",
+
+            "buttons.play": "PLAY"
+        },
+
+        "error": {
+            "headings.first": "Application Error",
+            "headings.second": "One ore more unexpected errors have occurred during the execution of the application. Please report this to the developers.",
+
+            "buttons.ok": "Acknowledge"
+        },
+
+        "emailVerify": {
+            "headings.first": "Email Verification",
+            "headings.second": "Verification code was sent to",
+
+            "notes.first": "Check the \"Spam\" folder if you don't see the letter",
+            "notes.second": "The code is valid for {{minutes}} minutes. After verification your E-Mail will be changed.",
+
+            "fields.code.name": "Enter the 6-digit code",
+
+            "alerts.codeResent": "The verification code want resent!",
+
+            "errors.codeInvalid": "Invalid code",
+            "errors.serverError": "Server error",
+
+            "status.loading": "Checking...",
+
+            "buttons.confirm": "Confirm",
+            "buttons.resend": "Send Again"
+        }
+    },
+
+    "modpacks": { "emptyDescription": "No description provided." }
+}
